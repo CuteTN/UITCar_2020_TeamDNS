@@ -1,0 +1,2 @@
+white lower bound: hsv (0, 0, 170+)
+Angle mult < 0.4 (cross road)
