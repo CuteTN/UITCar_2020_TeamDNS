@@ -110,7 +110,7 @@ def telemetry(sid, data):
             #plan: there is none lol
 
             #region of interest masking
-            cv2.imshow("original", image)
+            #cv2.imshow("original", image)
 
             topInterest = 110
             external_poly = np.array([[[0, 0], [0, topInterest], [320, topInterest], [320, 0]]], dtype=np.int32)
@@ -218,12 +218,12 @@ def telemetry(sid, data):
 
 
             #showing result output to windows (only for visualizing)
-            if TESTMODE:
-                cv2.imshow("image", image)
-                cv2.imshow("hsv", hsv_image)
-            
-            cv2.imshow("filter", filtered)
-            cv2.imshow("edge", hsv_edge)
+            #if TESTMODE:
+            #    cv2.imshow("image", image)
+            #    cv2.imshow("hsv", hsv_image)
+            #
+            #    cv2.imshow("filter", filtered)
+            #    cv2.imshow("edge", hsv_edge)
 
             #CAR BEHAVIOR GOES HERE
             #plan: if no line is presented, go straight, if L or R line is presented, angle defined by its slope
